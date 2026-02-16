@@ -1,0 +1,9 @@
+services:
+  tagessaetze:
+    build: .
+    container_name: tagessaetze-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
